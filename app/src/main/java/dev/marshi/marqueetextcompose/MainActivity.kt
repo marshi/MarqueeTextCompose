@@ -11,6 +11,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import dev.marshi.marqueetext.MarqueeText
 import dev.marshi.marqueetextcompose.ui.theme.MarqueeTextComposeTheme
 
 class MainActivity : ComponentActivity() {
