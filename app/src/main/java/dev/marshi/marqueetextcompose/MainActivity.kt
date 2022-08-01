@@ -3,12 +3,14 @@ package dev.marshi.marqueetextcompose
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import dev.marshi.marqueetextcompose.ui.theme.MarqueeTextComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,11 +23,19 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background,
                 ) {
-                    Box(
+                    Column(
                         modifier = Modifier.fillMaxSize(),
+                        verticalArrangement = Arrangement.Center,
                     ) {
+                        MarqueeText(text = "aiueo")
                         MarqueeText(
-                            modifier = Modifier.align(Alignment.CenterStart),
+                            modifier = Modifier.width(200.dp),
+                            durationMs = 3000,
+                            delayMs = 2000,
+                            spaceRatio = 0.2f,
+                            text = "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        )
+                        MarqueeText(
                             durationMs = 3000,
                             delayMs = 2000,
                             spaceRatio = 0.2f,

@@ -6,9 +6,9 @@ Inspired by: https://stackoverflow.com/a/68980032/9819094
 
 Marquee text effect hasn't been implemented in jetpack compose yet.
 
-This is Sample movie and code.
+Sample movie and code is here.
 
-https://user-images.githubusercontent.com/1423942/182198918-79262721-8661-43a0-864e-0b1af3fd3f34.mp4
+https://user-images.githubusercontent.com/1423942/182200420-e0946f2f-5bf6-4c05-a90a-71918e36c74e.mp4
 
 ```kotlin
 MarqueeText(
