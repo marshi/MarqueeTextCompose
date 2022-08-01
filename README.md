@@ -12,7 +12,6 @@ https://user-images.githubusercontent.com/1423942/182200420-e0946f2f-5bf6-4c05-a
 
 ```kotlin
 MarqueeText(
-    modifier = Modifier.align(Alignment.CenterStart),
     durationMs = 3000,
     delayMs = 2000,
     spaceRatio = 0.2f,
